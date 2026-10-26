@@ -1,0 +1,6 @@
+{
+  "name": "ai-mystery-room",
+  "private": true,
+  "scripts": { "dev": "concurrently -n api,web -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"", "dev:server": "npm --prefix server run dev", "dev:client": "npm --prefix client run dev", "build": "npm --prefix client run build", "start": "npm --prefix server start" },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
